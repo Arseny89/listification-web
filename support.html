@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Support and frequently asked questions for the Listification app.">
+<meta name="theme-color" content="#f1eedd" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<title>Support — Listification</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #f1eedd;
+    --card: #fffbeb;
+    --fg: #2a2620;
+    --muted: #7a6e4e;
+    --rule: #dbcfb9;
+    --accent: #84722b;
+    --link: #6e5f23;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0a0a0a;
+      --card: #161616;
+      --fg: #eceae0;
+      --muted: #9a9384;
+      --rule: #444444;
+      --accent: #c9b876;
+      --link: #d4c486;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 56px 20px 100px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    border-radius: 14px;
+    padding: 36px 32px 40px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.15;
+    margin: 0 0 6px;
+    color: var(--fg);
+  }
+  h1::after {
+    content: "";
+    display: block;
+    width: 68px;
+    height: 3px;
+    margin-top: 10px;
+    background: var(--accent);
+    border-radius: 2px;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 34px 0 8px;
+    color: var(--accent);
+  }
+  .meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 14px 0 28px;
+  }
+  p, li { color: var(--fg); }
+  a { color: var(--link); text-underline-offset: 2px; }
+  .contact {
+    background: color-mix(in srgb, var(--accent) 9%, var(--card));
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 28px 0 4px;
+  }
+  .contact strong { color: var(--accent); }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 36px 0 0; }
+  footer {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-top: 22px;
+  }
+  .back { display: inline-block; margin-bottom: 24px; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="card">
+
+  <a class="back" href="/">← Listification</a>
+
+  <h1>Support</h1>
+  <p class="meta">Listification &nbsp;·&nbsp; Frequently asked questions</p>
+
+  <div class="contact">
+    <strong>Need a hand?</strong> Email <a href="mailto:support@listification.app">support@listification.app</a>
+    and include your device model and iOS version. We usually reply within a couple of days.
+  </div>
+
+  <h2>How do I sync my lists across devices?</h2>
+  <p>Listification uses your private iCloud account to sync. On each device:</p>
+  <ul>
+    <li>Sign in to iCloud (Settings → your name).</li>
+    <li>Make sure <strong>iCloud Drive</strong> is turned on.</li>
+    <li>Keep Listification enabled in the iCloud app list.</li>
+    <li>Use the <strong>same Apple ID</strong> on every device.</li>
+  </ul>
+  <p>Syncing happens automatically in the background over Wi-Fi or cellular. The first sync after installing can take a few minutes.</p>
+
+  <h2>My lists aren't syncing. What can I try?</h2>
+  <ul>
+    <li>Check that the device has a working internet connection.</li>
+    <li>Confirm the same Apple ID is signed in on both devices.</li>
+    <li>Open the app and leave it in the foreground for a minute or two.</li>
+    <li>Restart the app, or restart the device.</li>
+    <li>Check that your iCloud storage isn't full (Settings → your name → iCloud).</li>
+  </ul>
+
+  <h2>I bought "Unlimited Lists" but it's not active on my other device.</h2>
+  <p>Open the app on that device and choose <strong>Restore Purchases</strong> on the unlock screen. Purchases are tied to your Apple ID, so make sure you're signed in to the App Store with the same account you used to buy.</p>
+
+  <h2>How do I delete my data?</h2>
+  <ul>
+    <li><strong>Individual items:</strong> swipe or use edit mode to delete lists, folders, or entries.</li>
+    <li><strong>Everything on one device:</strong> delete the app.</li>
+    <li><strong>iCloud copy:</strong> Settings → your name → iCloud → Manage Account Storage → Listification → Delete.</li>
+  </ul>
+  <p>Listification does not collect any personal data on a server, so there is nothing for us to delete on your behalf. See the <a href="/privacy-policy.html">Privacy Policy</a> for details.</p>
+
+  <h2>Does Listification work offline?</h2>
+  <p>Yes. All your lists are stored on the device and are fully available without a connection. Changes sync to iCloud the next time you're online.</p>
+
+  <h2>I have a feature request or found a bug.</h2>
+  <p>We'd love to hear it — email <a href="mailto:support@listification.app">support@listification.app</a>. Screenshots and steps to reproduce help a lot.</p>
+
+  <hr>
+  <footer>
+    © 2026 Arsenii Kornienko. Listification is not affiliated with Apple Inc.
+  </footer>
+
+</div>
+</div>
+</body>
+</html>
